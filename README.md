@@ -15,5 +15,6 @@ Task API Extension is a browser extension that allows you to manage a list of ta
 ## Technologies Used
 
 - HTML, CSS, JavaScript
-- Chrome/Firefox browser extension API
+- Chrome browser extension API
 - Fetch API for making HTTP requests
+- Fast API to DB
