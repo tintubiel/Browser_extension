@@ -1,0 +1,34 @@
+
+{
+    "manifest_version": 3,
+    "name": "Jira extension",
+    "version": "1.0",
+    "description": "Save tasks in DB and display table",
+    "permissions": ["activeTab", "scripting","webRequest"],
+    "action": {
+        "default_popup": "popup.html"
+      },
+    "host_permissions": ["<all_urls>"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+      "web_accessible_resources": [
+        {
+          "resources": ["content.js"],
+          "matches": ["<all_urls>"]
+        }
+    ]
+  }
+  
+  
+
+
+
+
+  
